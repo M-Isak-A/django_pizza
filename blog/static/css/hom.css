@@ -1,0 +1,123 @@
+/* Style for background  */
+body {
+    background: linear-gradient(to bottom right, #FFC107, #FF9800);
+  }
+  h1 {
+    margin-top: -50px;
+    margin-bottom: 20px;
+  color:white;
+  }
+  /* Style for the slideshow container */
+  #slideshow {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  /* Style for the images in the slideshow */
+  #slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  /* active state for the current image */
+  #slideshow img.active {
+    opacity: 1;
+  }
+  
+  /* previous image position to the left of the slideshow container */
+  #slideshow img.previous {
+    left: -100%;
+  }
+  
+  /* next image position to the right of the slideshow container */
+  #slideshow img.next {
+    left: 100%;
+  }
+  
+  /*active state for the previous and next images */
+  #slideshow img.previous.active, #slideshow img.next.active {
+    opacity: 1;
+    left: 0;
+    transition: opacity 1s, left 1s;
+  }
+  
+  /* Style for the previous and next buttons */
+  #prev-button,
+  #next-button {
+  padding:5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: yellow;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  /* Position the previous button on the left side of the slideshow container */
+  #prev-button {
+    left: 0;
+  }
+  
+  /* Position the next button on the right side of the slideshow container */
+  #next-button {
+    right: 0;
+  }
+  
+  /* Style for the navigation bar */
+  nav {
+    margin-top: 0px;
+    padding: 19px;
+  }
+  
+  /* Style for the navigation links */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for each navigation link item */
+  nav li {
+    margin: 0 10px;
+  }
+  
+  /* Style for the navigation links when hovered */
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* Style for the navigation links when hovered */
+  nav a:hover {
+    background: #fff;
+    color: #FF9800;
+  }
+  
+  /* Style for the menu section */
+  #menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  /* Style for the pizza images in the menu */
+  img {
+    height: 80px;
+    width: 80px;
+  }

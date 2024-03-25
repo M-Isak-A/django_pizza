@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pizza Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/hom.css' %}">    
+</head>
+<body>
+<script></script>
+    <header>
+        
+    <nav>
+        <ul id="nav">
+            <li><a href="{% url 'blog-home' %}">Home</a></li>
+            <li><a href="{% url 'blog-about' %}">About Us</a></li>
+            <li><a href="{% url 'blog-contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+<h1>Pizza Shop</h1>
+    </header>
+    <section id="slideshow">
+        <img src="{% static 'images/Capture.png' %}?text=Image1" alt="Slideshow" class="active">
+        <img src="{% static 'images/Capture2.png' %}?text=Image2" alt="Slideshow">
+        <img src="{% static 'images/Capture3.png' %}?text=Image3" alt="Slideshow">
+        <img src="{% static 'images/Capture1.png' %}?text=Image4" alt="Slideshow">
+        <img src="{% static 'images/Capture4.png' %}?text=Image5" alt="Slideshow">
+        <button id="prev-button"><</button>
+        <button id="next-button">></button>
+    </section>
+    <section id="menu">
+    <article>
+    <img src="{% static 'images/Capture3.png' %}?text=Pizza" alt="Pizza">
+    <h2>Pepperoni Pizza</h2>
+    <p>£10.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+    </article>
+    <article>
+    <img src="{% static 'images/Capture2.png' %}?text=Pizza" alt="Pizza">
+    <h2>Hawaiian Pizza</h2>
+    <p>£12.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+    </article>
+    <article>
+    <img src="{% static 'images/Capture1.png' %}?text=Pizza" alt="Pizza">
+    <h2>Veggie Pizza</h2>
+    <p>£9.99</p>
+    <button class="add-to-cart">Add to Cart</button>
+    </article>
+    </section>
+    <footer>
+    <p>© 2023 Pizza Shop. All rights reserved.</p>
+    </footer>
+    <script src="{% static 'js/Script.js' %}"></script>
+</body>
+</html>
